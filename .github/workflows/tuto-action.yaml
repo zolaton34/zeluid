@@ -1,7 +1,7 @@
 name: Nice Tuto
 on: [push]
 jobs:
-  Beautiful JOb:
+  beautiful-job:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
