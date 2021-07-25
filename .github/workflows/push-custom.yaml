@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - custom-actions
+  pull_request:
+    branches:
+      - main
 jobs:
   beautiful-job-push:
     runs-on: ubuntu-latest
