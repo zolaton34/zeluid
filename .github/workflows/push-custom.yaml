@@ -1,8 +1,12 @@
 name: Nice Tuto
-on: [push]
+on:
+  push:
+    branches:
+      - custom-actions
 jobs:
-  beautiful-job:
+  beautiful-job-push:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Job automatically triggered by a ${{ github.event_name }} event."
+      - run: "Push on custom-actions"
 
