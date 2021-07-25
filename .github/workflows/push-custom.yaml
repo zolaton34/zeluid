@@ -5,14 +5,14 @@ on:
   push:
     branches:
       - custom-actions
-  pull_request:
-    branches:
-      - main
-  # Also trigger on page_build, as well as release created events
-  page_build:
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
+  #pull_request:
+  #  branches:
+  #    - main
+  ## Also trigger on page_build, as well as release created events
+  #page_build:
+  #release:
+  #  types: # This configuration does not affect the page_build event above
+  #    - created
 jobs:
   beautiful-job-push:
     runs-on: ubuntu-latest
