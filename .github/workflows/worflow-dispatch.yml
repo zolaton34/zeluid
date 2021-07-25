@@ -1,6 +1,5 @@
-name: Manually triggered workflow
+name: Manually triggered
 on:
-  push:
   workflow_dispatch:
     inputs:
       name:
