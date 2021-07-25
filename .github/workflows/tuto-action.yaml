@@ -1,2 +1,8 @@
 # Triggered when code is pushed to any branch in a repository
 on: push
+  jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A nice job triggered by a ${{ github.event_name }} event."
+
